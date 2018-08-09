@@ -1,0 +1,7 @@
+<p *ngFor="let course of courses">
+  <span [class.bold]="isbold">{{ course.id }}</span> --{{ course.course}}
+
+</p>
+<p *ngIf="isbold">
+  <button (click)="clickme(20)" value="20">click me</button>
+</p>
